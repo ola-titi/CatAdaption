@@ -1,5 +1,5 @@
 # CatAdoption
-Author: OlA Altiti
+## Author : Ola Altiti
 
 This simple website provides a list of cats to be available for volunteers which I hope will encourage people to help cats to get a safe and comfortable home.
 
