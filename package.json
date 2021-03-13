@@ -1,16 +1,15 @@
 {
   "name": "CatAdaption",
   "version": "1.0.0",
-  "description": "",
+  "description": "This simple website provides a list of cats to be available for volunteers which I hope will encourage people to help cats to get a safe and comfortable home.",
   "engines": {
     "node": "14.16.0"
-    },
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "server": "node index.js"
-
   },
   "repository": {
     "type": "git",
@@ -22,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/ola-titi/CatAdaption/issues"
   },
-  "homepage": "https://github.com/ola-titi/CatAdaption#readme"
+  "homepage": "https://github.com/ola-titi/CatAdaption#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {}
 }
