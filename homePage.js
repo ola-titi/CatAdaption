@@ -5,7 +5,7 @@ const API_KEY = "9be22c80-ab65-4681-8e68-7cb4b76ad632"; //Cat API key
 const URL = 'https://api.thecatapi.com/v1/images/search'; //Api URL
 let PORT = 3000;
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT||PORT, () => {
     console.log(`Port ${PORT}`)
 });
 
@@ -62,7 +62,3 @@ app.get("/about", (req, res) => {
 
     res.render("About");
 });
-
-app.all("*",(req,res)=>{
-    res.render('/')
-})
