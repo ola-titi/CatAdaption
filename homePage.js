@@ -62,3 +62,7 @@ app.get("/about", (req, res) => {
 
     res.render("About");
 });
+
+app.all("*",(req,res)=>{
+    res.render('/')
+})
