@@ -1,0 +1,20 @@
+{
+  "name": "CatAdaption",
+  "version": "1.0.0",
+  "description": "",
+  "main": "adoptPage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ola-titi/CatAdaption.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ola-titi/CatAdaption/issues"
+  },
+  "homepage": "https://github.com/ola-titi/CatAdaption#readme"
+}

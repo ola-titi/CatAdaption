@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="cat cats pet">
+    <meta name="description" content="Cat Adoption website">
+    <meta name="author" content="Ola Altiti">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main id='my-main'>
+
+        <body>
+            <header>
+                <div id='div1'>
+                    <h1 id='title'> Cat Adoption </h1>
+                    <p id='p1'><b>Help cats to get a safe place</b></p>
+                </div>
+                <nav>
+                    <a href="/"><b>Home</b></a>
+                    <a href="/about"><b>About us </b></a>
+                </nav>
+            </header>
+            <section>
+
+                <article>
+                    <p id='FormP'><b>Pick your cat</b></p>
+                    <form id="form1" method="POST" action="/cat">
+                        <label for="fname">Name:</label>
+                        <input type="text" id="name" name="name"><br> <br>
+                        <label for="breed">Breed:</label>
+                        <input type="text" id="breed" name="breed"><br> <br>
+                        <label for="age">Age:</label>
+                        <input type="text" id="age" name="age"><br> <br>
+                        <label for="color">Color:</label>
+                        <input type="text" id="color" name="color"><br><br>
+                        <input type="submit" value="View">
+
+                    </form>
+                    <br><br>
+                    <% if (typeof mycats != 'undefined') { %>
+                        <!-- <h1><%= typeof(mycats) %></h1> -->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Cat Name</th>
+                                    <th>Cat Color</th>
+                                    <th>Cat Age</th>
+                                    <th>Cat Breed</th>
+                                </tr>
+                            </thead>
+
+                            <% mycats.forEach( element=> { %>
+                                <tr>
+                                    <th>
+                                        <%= element.name %>
+                                    </th>
+                                    <th>
+                                        <%= element.breed %>
+                                    </th>
+                                    <th>
+                                        <%= element.age %>
+                                    </th>
+                                    <th>
+                                        <%= element.color %>
+                                    </th>
+                                </tr>
+                                <% }) %>
+                        </table>
+                        <% } %>
+                </article>
+            </section>
+            <footer>
+                <p id='gitP'>Ola Altiti-2021<br><a id=gitA href="https://github.com/ola-titi">https://github.com/ola-titi</a></p>
+            </footer>
+
+    </main>
+
+    <script src="homePage.js"></script>
+</body>
+
+</html>

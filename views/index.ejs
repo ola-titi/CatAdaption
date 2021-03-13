@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="cat cats pet">
+    <meta name="description" content="Cat Adoption website">
+    <meta name="author" content="Ola Altiti">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css/style.css" />   
+     <title>Document</title>
+</head>
+
+<body>
+    <main id='my-main'>
+
+        <body>
+            <header>
+                <div id='div1'>
+                    <h1 id='title'> Cat Adoption </h1>
+                    <p id='p1'><b>Help cats to get a safe place</b></p>
+                </div>
+                <nav>
+                    <a href="/cat"><b>Adopt cat</b></a>
+                    <a href="/about"><b>About us </b></a>
+                </nav>
+            </header>
+            <section>
+              
+                <article>
+                    
+                    <p>There are tons of cats who need good homes. You can help them to get a safe and comfortable home.
+                    </p>
+                        <section class="grid-container">
+                            <% mycat.forEach(element=>
+                            { %> 
+                            <div id='div2' class='grid-item'>
+                                <img  src=<%=element.url %> id=<%=element.id%> >
+                                    <h1>
+                                        <%= element.id %>
+                                    </h1>
+                            </div>
+                            <% }) %>
+                        </section>
+                  
+                </article>
+            </section>
+            <footer>
+                <p id='ola'>Ola Altiti-2021<br><a id=aola href="https://github.com/ola-titi">https://github.com/ola-titi</a></p>
+            </footer>
+
+    </main>
+    <script src="homePage.js"></script>
+   
+</body>
+
+</html>
