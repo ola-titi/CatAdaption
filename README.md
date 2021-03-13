@@ -9,7 +9,7 @@ I got some problems while building this website, however, I searched and learned
 
 [Axios](https://www.sitepoint.com/axios-beginner-guide/)
 
-when I faced problem realted to applie CSS on EJS file :
+When I faced a problem realted to applying CSS on EJS file:
 
 [static file 1 ](https://stackabuse.com/serving-static-files-with-node-and-express-js/)
 
