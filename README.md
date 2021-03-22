@@ -17,7 +17,7 @@ When I faced a problem realted to applying CSS on EJS file:
 
 [static file 3](https://www.positronx.io/how-to-serve-static-files-css-js-images-in-express-js/)
 
-### other References
+### Other References:
 
 [w3School](https://www.w3schools.com/)
 
